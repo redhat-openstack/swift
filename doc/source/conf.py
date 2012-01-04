@@ -20,8 +20,8 @@ import datetime
 # If extensions (or modules to document with autodoc) are in another directory,
 # add these directories to sys.path here. If the directory is relative to the
 # documentation root, use os.path.abspath to make it absolute, like shown here.
-sys.path.extend([os.path.abspath('../swift'), os.path.abspath('..'),
-                 os.path.abspath('../bin')])
+sys.path.extend([os.path.abspath('../../swift'), os.path.abspath('../..'),
+                 os.path.abspath('../../bin')])
 
 # -- General configuration ----------------------------------------------------
 
@@ -29,7 +29,7 @@ sys.path.extend([os.path.abspath('../swift'), os.path.abspath('..'),
 # extensions coming with Sphinx (named 'sphinx.ext.*') or your custom ones.
 extensions = ['sphinx.ext.autodoc',
               'sphinx.ext.todo', 'sphinx.ext.coverage', 'sphinx.ext.pngmath',
-              'sphinx.ext.ifconfig', 'oslosphinx']
+              'sphinx.ext.ifconfig', 'oslo.sphinx']
 todo_include_todos = True
 
 # Add any paths that contain templates here, relative to this directory.
