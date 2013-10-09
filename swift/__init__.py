@@ -41,13 +41,8 @@ paste.__path__.insert(0, paste.__path__.pop(-1))
 import os
 import gettext
 
-import pbr.version
-
-
-_version_info = pbr.version.VersionInfo('swift')
-__version__ = _version_info.release_string()
-__canonical_version__ = _version_info.version_string()
-
+__version__ = "%RPMVERSION%-%RPMRELEASE%"
+__canonical_version__ = "%RPMVERSION%"
 
 _localedir = os.environ.get('SWIFT_LOCALEDIR')
 _t = gettext.translation('swift', localedir=_localedir, fallback=True)
