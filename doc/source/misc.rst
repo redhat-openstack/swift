@@ -101,7 +101,6 @@ Swob
 .. automodule:: swift.common.swob
     :members:
     :show-inheritance:
-    :special-members: __call__
 
 .. _utils:
 
